@@ -9,7 +9,7 @@ cap = cv2.VideoCapture(0)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 #time.sleep(2)
-cap.set(15, -8.0)
+#cap.set(15, -8.0)
 
 face_cascade = cv2.CascadeClassifier('opencv_face_detection/haarcascade_frontalface_alt.xml')
 
@@ -65,7 +65,7 @@ while(True):
 
     # Display the resulting frame
 
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv2.waitKey(20) & 0xFF == ord('q'):
         break
 
 # When everything done, release the capture
